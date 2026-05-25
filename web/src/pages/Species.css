@@ -1,0 +1,44 @@
+.species-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 24px 60px;
+}
+
+.species-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.species-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.species-stat {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.05em;
+}
+
+.rarity-section {
+  margin-bottom: 36px;
+}
+
+.tiles-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-top: 16px;
+}
+
+@media (max-width: 880px) {
+  .tiles-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 640px) {
+  .tiles-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 420px) {
+  .tiles-grid { grid-template-columns: repeat(2, 1fr); }
+}

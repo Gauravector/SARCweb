@@ -1,0 +1,49 @@
+.tile {
+  position: relative;
+  aspect-ratio: 1 / 1;        
+  border-radius: 14px;
+  border: 2px solid var(--ink, #1a1a1a);
+  overflow: hidden;             
+  box-shadow: 0 3px 0 var(--ink, #1a1a1a);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 0 var(--ink, #1a1a1a);
+}
+
+
+.tile-common  { background: #5fc8e8; }
+.tile-rare    { background: #8de052; }
+.tile-super   { background: #c89cf5; }
+
+.tile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           
+  display: block;
+}
+
+.tile-locked {
+  background: #a0a0a0;
+}
+.tile-locked .tile-image {
+  filter: brightness(0);      
+  opacity: 0.7;
+}
+
+
+.tile-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px;
+  text-align: center;
+}

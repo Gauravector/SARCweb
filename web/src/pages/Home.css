@@ -1,0 +1,98 @@
+
+.home-page {
+  padding: 0 !important;
+  max-width: none !important;
+}
+
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 24px 80px;
+
+  background-image:linear-gradient(rgba(255, 245, 230, 0.85), rgba(255, 245, 230, 0.85)), url('../data/images/bg2.png');
+  background-size: 400px;          
+  background-repeat: repeat;
+  background-color: #fff5e6;      
+}
+
+.hero-content {
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: clamp(40px, 7vw, 80px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: var(--ink, #1a1a1a);
+  margin-bottom: 24px;
+}
+
+.hero-focus {
+  background: linear-gradient(135deg, #ff6b9d, #c89cf5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-subtitle {
+  font-size: clamp(20px, 1.6vw, 23px);
+  font-weight: 500;
+  line-height: 1.6;
+  color: rgba(31, 1, 27, 0.75);
+  max-width: 560px;
+  margin: 0 auto 36px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-primary {
+  background: var(--ink, #1a1a1a);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 0 var(--ink, #1a1a1a);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.cta-primary:hover {
+  transform: translateY(-2px);
+  background: var(--ink, #ffffff);
+  color: var(--ink, #1a1a1a);
+  box-shadow: 0 6px 0 var(--ink, #000000);
+}
+.cta-primary:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 0 var(--ink, #1a1a1a);
+}
+
+.cta-secondary {
+  background: var(--ink, #ffffff);
+  color: var(--ink, #1a1a1a);
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+  box-shadow: 0 4px 0 var(--ink, #000000);
+}
+.cta-secondary:hover {
+  transform: translateY(-2px);
+  background: var(--ink, #000000);
+  color: var(--ink, #ffffff);
+  box-shadow: 0 6px 0 var(--ink, #ffffff);
+}
