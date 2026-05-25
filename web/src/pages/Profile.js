@@ -51,15 +51,15 @@ function Profile() {
               <li><span className="stat-key">Streak:</span> 3 Days 🔥</li>
               <li><span className="stat-key">Friends:</span> 12</li>
               <li><span className="stat-key">Travelled:</span> 129 km</li>
-              <li><span className="stat-key">Discoveries:</span> 019</li>
+              <li><span className="stat-key">Discoveries:</span> 018</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div className="profile-stats">
-        <div className="stat-pill"> <Link to="/scenes">Scenes 12/150</Link></div>
-        <div className="stat-pill"> <Link to="/species">Species 7/350</Link></  div>
+        <div className="stat-pill"> <Link to="/scenes">Scenes 12/80</Link></div>
+        <div className="stat-pill"> <Link to="/species">Species 6/35</Link></  div>
       </div>
 
       <section className="recent-discoveries">

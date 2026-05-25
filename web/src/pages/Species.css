@@ -27,18 +27,22 @@
 }
 
 .tiles-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   gap: 14px;
-  margin-top: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 4px 16px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
 }
 
-@media (max-width: 880px) {
-  .tiles-grid { grid-template-columns: repeat(4, 1fr); }
+.tiles-grid::-webkit-scrollbar {
+  display: none;
 }
-@media (max-width: 640px) {
-  .tiles-grid { grid-template-columns: repeat(3, 1fr); }
-}
-@media (max-width: 420px) {
-  .tiles-grid { grid-template-columns: repeat(2, 1fr); }
+
+.tiles-grid > * {
+  flex: 0 0 180px;
+  scroll-snap-align: start;
 }
